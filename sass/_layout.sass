@@ -1,0 +1,63 @@
+@use "globals" as global
+
+.container
+    min-height: 100vh
+    background-image: url("../images/bg-intro-mobile.png")
+    background-color: global.$red
+    background-size: cover
+    display: flex
+    flex-direction: column
+
+.page
+    padding: 3em
+    display: flex
+    flex-direction: column
+    row-gap: 1em
+    text-align: center
+    font-size: 0.9rem
+
+.page__intro
+    color: white
+    
+
+.page__info
+    width: 100%
+    background-color: global.$blue
+    padding: 2em
+    color: white
+    border-radius: 15px
+    box-shadow: 0 0.5em global.$dark-blue
+    margin-top: 2em
+
+.page__form
+    display: flex
+    flex-direction: column
+    row-gap: 0.5em
+    background-color: white
+    padding: 1.5em
+    margin-top: 1em
+    border-radius: 10px
+    box-shadow: 0 0.5em  global.$dark-blue
+
+.input__field
+    padding: 1em
+    font-weight: 700
+
+.input__button
+    padding: 1.2em
+    background-color: global.$green
+    border-radius: 10px
+    font-size: 1.1rem
+    text-transform: uppercase
+    color: white
+    border: none
+    cursor: pointer
+
+.form__disclaimer
+    font-weight: 400
+    color: global.$grayish-blue
+    font-size: 0.8rem
+    
+.disclaimer__link
+    text-decoration: none
+    color: global.$red

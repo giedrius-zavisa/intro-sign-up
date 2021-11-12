@@ -1,0 +1,93 @@
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  min-height: 100vh;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: #ff7a7a;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.page__intro {
+  color: white;
+}
+
+.page__info {
+  width: 100%;
+  background-color: #6055a5;
+  padding: 2em;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0.5em rgba(62, 60, 73, 0.2);
+  margin-top: 2em;
+}
+
+.page__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  background-color: white;
+  padding: 1.5em;
+  margin-top: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0.5em rgba(62, 60, 73, 0.2);
+}
+
+.input__field {
+  padding: 1em;
+  font-weight: 700;
+}
+
+.input__button {
+  padding: 1.2em;
+  background-color: #38cc8c;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form__disclaimer {
+  font-weight: 400;
+  color: #b9b6d3;
+  font-size: 0.8rem;
+}
+
+.disclaimer__link {
+  text-decoration: none;
+  color: #ff7a7a;
+}
+
+/*# sourceMappingURL=main.css.map */
