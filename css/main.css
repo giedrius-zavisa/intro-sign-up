@@ -15,11 +15,20 @@ html {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 2em;
 }
 .attribution a {
   color: #3e52a3;
 }
 
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 .container {
   min-height: 100vh;
   background-image: url("../images/bg-intro-mobile.png");
@@ -64,8 +73,28 @@ html {
 }
 
 .input__field {
+  position: relative;
   padding: 1em;
   font-weight: 700;
+  width: 100%;
+}
+
+.error__icon {
+  position: absolute;
+  right: 5em;
+  margin-top: -2.5em;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.error__text {
+  width: 50%;
+  font-size: 0.6rem;
+  text-align: right;
+  margin-left: 50%;
+  color: #ff7a7a;
+  font-style: italic;
 }
 
 .input__button {
@@ -77,6 +106,7 @@ html {
   color: white;
   border: none;
   cursor: pointer;
+  box-shadow: 0 0.3em rgba(62, 60, 73, 0.2);
 }
 
 .form__disclaimer {
@@ -88,6 +118,40 @@ html {
 .disclaimer__link {
   text-decoration: none;
   color: #ff7a7a;
+}
+
+@media only screen and (min-width: 1140px) {
+  .container {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+
+  .page {
+    padding: 5em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page__intro {
+    width: 40%;
+    margin-left: 10em;
+    padding: 2em;
+    font-size: 1.1rem;
+    text-align: left;
+    justify-self: center;
+    align-self: center;
+  }
+  .page__intro h1 {
+    font-size: 3rem;
+  }
+
+  .page__body {
+    margin-left: 1em;
+    width: 40%;
+  }
+
+  .error__icon {
+    left: 85%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

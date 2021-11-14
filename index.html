@@ -18,6 +18,7 @@
 
   <div class="container">
     <main class="page">
+      <!-- Introductionary text -->
       <div class="page__intro">
         <h1>
           Learn to code by watching others
@@ -28,33 +29,61 @@
           but understanding how developers think is invaluable. 
         </p>
       </div>
-      
+
+      <div class="page__body">
+ 
+      <!-- Sign up details -->
       <p class="page__info">
         Try it free 7 days then $20/mo. thereafter
       </p>
     
-      <form class="page__form">
-        <input class="input__field" type="text" placeholder="First Name">
-        <input class="input__field" type="text" placeholder="Last Name">
-        <input class="input__field" type="text" placeholder="Email Address">
-        <input class="input__field" type="text" placeholder="Password">
+      <!-- Form -->
+      <form class="page__form" action="#">
+          
+        <div class="input__row">
+          <input class="input__field" type="text" placeholder="First Name">
+          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;">
+          <p class="error__text" style="display: none;">First name cannot be empty</p>
+        </div>
+
+        <div class="input__row">
+          <input class="input__field" type="text" placeholder="Last Name"> 
+          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;">
+          <p class="error__text" style="display: none;">Last name cannot be empty</p>
+        </div>
+
+        <div class="input__row">
+          <input class="input__field" type="text" placeholder="Email Address">  
+          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;">   
+          <p class="error__text" style="display: none;">Looks like this is not an email</p> 
+        </div>
+
+        <div class="input__row">
+          <input class="input__field" type="text" placeholder="Password">   
+          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;">  
+          <p class="error__text" style="display: none;">Password cannot be empty</p>     
+        </div>
 
         <input class="input__button" type="button" value="Claim your free trial">
-                 
+                  
         <p class="form__disclaimer">
           By clicking the button, you are agreeing to our <a class="disclaimer__link" href="#">Terms and Services</a>
         </p>
-      </form>
+        </form>
+
+        <footer>
+          <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Your Name Here</a>.
+          </p>
+        </footer>
+      </div>
+     
      
     </main>
     
     
-    <footer>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+    
   </div>
   
   <script src="scripts/main.js"></script>

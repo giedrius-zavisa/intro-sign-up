@@ -1,5 +1,11 @@
 @use "globals" as global
 
+@keyframes fade
+ 0%, 100% 
+     opacity: 0
+ 50% 
+     opacity: 1
+
 .container
     min-height: 100vh
     background-image: url("../images/bg-intro-mobile.png")
@@ -40,8 +46,26 @@
     box-shadow: 0 0.5em  global.$dark-blue
 
 .input__field
+    position: relative
     padding: 1em
     font-weight: 700
+    width: 100%
+
+.error__icon
+    position: absolute
+    right: 5em
+    margin-top: -2.5em
+    animation-name: fade
+    animation-duration: 2s
+    animation-iteration-count: infinite
+
+.error__text
+    width: 50%
+    font-size: 0.6rem
+    text-align: right
+    margin-left: 50%
+    color: global.$red
+    font-style: italic
 
 .input__button
     padding: 1.2em
@@ -52,6 +76,8 @@
     color: white
     border: none
     cursor: pointer
+    box-shadow: 0 0.3em  global.$dark-blue
+        
 
 .form__disclaimer
     font-weight: 400
