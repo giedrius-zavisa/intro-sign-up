@@ -9,7 +9,7 @@ inputButton.addEventListener('click', function() {
    
     for(let i = 0; i < inputField.length; i++) {
 
-         // Email validation with a regex check
+        // Email validation with a regex check
         if(i === 2) {
 
             if(validateEmail(inputField[i].value)) {
@@ -31,6 +31,13 @@ inputButton.addEventListener('click', function() {
             console.log("invalid field");
             continue;
         }
+        else {
+            // Reset aria elements
+            inputField[it].removeAttribute("aria-invalid");
+            inputField[it].removeAttribute("aria-describedBy");
+            errorIcon[it].setAttribute("aria-hidden", "true");
+            errorText[it].setAttribute("aria-hidden", "true");
+        }
     }
 
     if(validInput) {
@@ -48,10 +55,17 @@ const validateEmail = function(email) {
 // Input field style changes when a field has wrong information
 const invalidField = function(it) {
 
+    // Change form's visual elements
     inputField[it].style.borderColor = "red";
     inputField[it].style.color = "red";
-    errorText[it].style.display = "block";
     errorIcon[it].style.display = "block";
+    errorText[it].style.display = "block";
+
+    // Set form's aria elements
+    inputField[it].setAttribute("aria-invalid", "true");
+    inputField[it].setAttribute("aria-describedBy", errorText[it].textContent);
+    errorIcon[it].setAttribute("aria-hidden", "false");
+    errorText[it].setAttribute("aria-hidden", "false");
 }
 
 

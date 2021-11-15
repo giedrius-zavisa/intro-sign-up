@@ -39,7 +39,7 @@ html {
 }
 
 .page {
-  padding: 3em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   row-gap: 1em;
@@ -77,6 +77,8 @@ html {
   padding: 1em;
   font-weight: 700;
   width: 100%;
+  border-radius: 10px;
+  border: 1px solid #b9b6d3;
 }
 
 .error__icon {
@@ -130,15 +132,17 @@ html {
   }
 
   .page {
+    width: 80%;
     padding: 5em;
     display: flex;
     flex-direction: row;
+    margin-left: 10em;
   }
 
   .page__intro {
-    width: 40%;
-    margin-left: 10em;
-    padding: 2em;
+    width: 45%;
+    margin-left: 5em;
+    padding: 1em;
     font-size: 1.1rem;
     text-align: left;
     justify-self: center;
@@ -151,6 +155,10 @@ html {
   .page__body {
     margin-left: 1em;
     width: 40%;
+  }
+
+  .page__form {
+    row-gap: 1em;
   }
 
   .error__icon {
