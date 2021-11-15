@@ -5,7 +5,7 @@ const errorIcon = document.querySelectorAll(".error__icon");
 
 inputButton.addEventListener('click', function() {
 
-    let validInput = false;
+    let validInput = true;
    
     for(let i = 0; i < inputField.length; i++) {
 
@@ -14,13 +14,12 @@ inputButton.addEventListener('click', function() {
 
             if(validateEmail(inputField[i].value)) {
                 console.log("valid email");
-                validInput = true;
             }
             else {
                 console.log("invalid email");
                 validInput = false;
                 invalidField(i);
-                break;
+                continue;
             }
             
         }
@@ -30,11 +29,7 @@ inputButton.addEventListener('click', function() {
             invalidField(i);
             validInput = false;
             console.log("invalid field");
-            break;
-        }
-        else {           
-            validInput = true;
-            console.log("all is good");
+            continue;
         }
     }
 
