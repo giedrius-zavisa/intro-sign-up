@@ -41,30 +41,30 @@
       <form class="page__form" action="#">
           
         <div class="input__row">
-          <input class="input__field" type="text" placeholder="First Name">
+          <input class="input__field" type="text" placeholder="First Name" name="First Name" aria-labelledby="First Name" aria-hidden="true">
           <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;">
-          <p class="error__text" style="display: none;">First name cannot be empty</p>
+          <p class="error__text" style="display: none;" aria-hidden="true">First name cannot be empty</p>
         </div>
 
         <div class="input__row">
-          <input class="input__field" type="text" placeholder="Last Name"> 
-          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;">
-          <p class="error__text" style="display: none;">Last name cannot be empty</p>
+          <input class="input__field" type="text" placeholder="Last Name" name="Last Name" aria-labelledby="Last Name"> 
+          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;" aria-hidden="true">
+          <p class="error__text" style="display: none;" aria-hidden="true">Last name cannot be empty</p>
         </div>
 
         <div class="input__row">
-          <input class="input__field" type="text" placeholder="Email Address">  
-          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;">   
-          <p class="error__text" style="display: none;">Looks like this is not an email</p> 
+          <input class="input__field" type="text" placeholder="Email Address" name="Email Address" aria-labelledby="Email Address">  
+          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;" aria-hidden="true">   
+          <p class="error__text" style="display: none;" aria-hidden="true">Looks like this is not an email</p> 
         </div>
 
         <div class="input__row">
-          <input class="input__field" type="text" placeholder="Password">   
-          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;">  
-          <p class="error__text" style="display: none;">Password cannot be empty</p>     
+          <input class="input__field" type="text" placeholder="Password" name="Password" aria-labelledby="Password">   
+          <img class="error__icon" src="images/icon-error.svg" alt="Error" style="display: none;" aria-hidden="true">  
+          <p class="error__text" style="display: none;" aria-hidden="true">Password cannot be empty</p>     
         </div>
 
-        <input class="input__button" type="button" value="Claim your free trial">
+        <input class="input__button" type="button" value="Claim your free trial" aria-label="submit"> 
                   
         <p class="form__disclaimer">
           By clicking the button, you are agreeing to our <a class="disclaimer__link" href="#">Terms and Services</a>
